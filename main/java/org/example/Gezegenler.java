@@ -1,7 +1,7 @@
 package org.example;
-class EnumOrnek {
+class Gezegenler {
 
-    public enum Gezegenler {
+    public enum Gezegen {
         MERKUR(1, 57, 2.4, 87),
         VENUS(2, 110, 6.0, 224),
         DUNYA(3, 148, 6.3, 365),
@@ -12,25 +12,25 @@ class EnumOrnek {
         NEPTUN(8, 4495, 24.6, 164);
 
 
-        private int guneseUzaklikNo;
-        private int guneseUzaklik;
+        private int uzaklikNo;
+        private int uzaklik;
         private double yaricapi;
         private int donmeSuresi;
 
-        Gezegenler(int guneseUzaklikNo, int guneseUzaklik, double yaricapi, int donmeSuresi) {
-            this.guneseUzaklikNo = guneseUzaklikNo;
-            this.guneseUzaklik = guneseUzaklik;
+        Gezegen(int uzaklikNo, int uzaklik, double yaricapi, int donmeSuresi) {
+            this.uzaklikNo = uzaklikNo;
+            this.uzaklik = uzaklik;
             this.yaricapi = yaricapi;
             this.donmeSuresi = donmeSuresi;
 
         }
 
-        public int getGuneseUzaklikNo() {
-            return guneseUzaklikNo;
+        public int getUzaklikNo() {
+            return uzaklikNo;
         }
 
-        public int getGuneseUzaklik() {
-            return guneseUzaklik;
+        public int getUzaklik() {
+            return uzaklik;
         }
 
         public double getYaricapi() {
@@ -41,12 +41,6 @@ class EnumOrnek {
             return donmeSuresi;
         }
 
-        public static void main(String[] args) {
-            for (Gezegenler gezegen : Gezegenler.values()) {
-                System.out.println("Gezegenin adı: " + gezegen + " Güneşe uzaklık sıralaması: " + gezegen.guneseUzaklikNo + " Güneşe uzaklığı: " + gezegen.guneseUzaklik);
-
-            }
-        }
     }
     }
 
