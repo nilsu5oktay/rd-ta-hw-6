@@ -1,7 +1,6 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.*;
 
 public class FindRepeatedLetters {
 
@@ -34,7 +33,8 @@ public class FindRepeatedLetters {
         for(int i=0; i<result.size(); i++){
             s += result.get(i) + " ";
         }
-        Random r = new Random();
         return s;
     }
+
 }
+

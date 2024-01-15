@@ -1,6 +1,10 @@
 package org.example;
 
+import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class FindRepeatedLettersRun {
 
@@ -12,8 +16,25 @@ public class FindRepeatedLettersRun {
         testList.add("cicekler");
 
         FindRepeatedLetters f = new FindRepeatedLetters();
-        System.out.println(f.createSingleString(testList));
+        String x = f.createSingleString(testList);
+        System.out.println(x);
 
+        List<String> characters = Arrays.asList(x.split(""));
+        Collections.shuffle(characters);
+        String afterShuffle = "";
+        for (String character : characters)
+        {
+            afterShuffle += character;
+        }
+        System.out.println(afterShuffle);
+    }
 
     }
-}
+
+
+
+
+
+
+
+
