@@ -20,4 +20,5 @@ public interface Ekip  {
     void taskEkle();
 
     void taskGuncelle();
+
 }

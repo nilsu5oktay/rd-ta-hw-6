@@ -31,5 +31,6 @@ public abstract class FinansEkibi implements Ekip{
     @Override
     public void taskGuncelle() {
 
+
     }
 }

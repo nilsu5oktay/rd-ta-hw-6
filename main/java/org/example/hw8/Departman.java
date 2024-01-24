@@ -33,5 +33,6 @@ public abstract class Departman implements Ekip {
     @Override
     public void taskGuncelle() {
 
+
     }
 }

@@ -10,5 +10,6 @@ public class EmeklilikTest {
 
         personel1.emeklilikHesapla();
         personel2.emeklilikHesapla();
+
     }
 }
